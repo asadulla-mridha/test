@@ -1,0 +1,58 @@
+@kyefremes colorChanger{
+	0%{
+		background: url(photos/cart-1.jpg);
+		background-size: contain;
+		top: 0px;
+		left: 0px;
+		transform: rotate(-180deg); 
+	}
+	25%{
+		background:  url(photos/cart-1.jpg);
+		background-size: contain;
+		top: 0px;
+		left: 80%;
+		transform: rotate(180deg);
+	}
+	50%{
+		background:  url(photos/cart-1.jpg);
+		background-size: contain;
+		top:67%;
+		left: 80%;
+		transform: rotate(180deg);
+	}
+	75%{
+		background:  url(photos/cart-1.jpg);
+		background-size: contain;
+		top:67%;
+		left: 0px;
+		transform: rotate(-180deg);
+	}
+	100%{
+		background:  url(photos/cart-1.jpg);
+		background-size: contain;
+		top:0px;
+		left: 0px;
+		transform: rotate(-180deg);
+	}
+.container{
+	width: 80%;
+	height: 600px;
+	margin: 0px auto;
+	
+	box-shadow: 5px 5px 10px #000, -5px -5px 10px #000;
+	position: relative;
+	background-color: green;
+	border-radius: 5%;
+	overflow: hidden;
+	
+}
+.light{
+	width: 200px;
+	height: 200px;
+	background-size: contain;
+	position: absolute;
+	animation-name: color-changer;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
